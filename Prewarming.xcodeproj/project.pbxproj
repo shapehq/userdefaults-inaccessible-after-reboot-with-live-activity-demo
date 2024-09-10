@@ -11,7 +11,41 @@
 		396AEFC72C8F298B002EA340 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFC62C8F298B002EA340 /* ContentView.swift */; };
 		396AEFC92C8F298C002EA340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396AEFC82C8F298C002EA340 /* Assets.xcassets */; };
 		396AEFCC2C8F298C002EA340 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396AEFCB2C8F298C002EA340 /* Preview Assets.xcassets */; };
+		396AEFD92C8F29D1002EA340 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396AEFD82C8F29D1002EA340 /* WidgetKit.framework */; };
+		396AEFDB2C8F29D1002EA340 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396AEFDA2C8F29D1002EA340 /* SwiftUI.framework */; };
+		396AEFDE2C8F29D1002EA340 /* PrewarmingExtBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFDD2C8F29D1002EA340 /* PrewarmingExtBundle.swift */; };
+		396AEFE02C8F29D1002EA340 /* PrewarmingExtLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFDF2C8F29D1002EA340 /* PrewarmingExtLiveActivity.swift */; };
+		396AEFE22C8F29D1002EA340 /* PrewarmingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFE12C8F29D1002EA340 /* PrewarmingExt.swift */; };
+		396AEFE42C8F29D1002EA340 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFE32C8F29D1002EA340 /* AppIntent.swift */; };
+		396AEFE62C8F29D2002EA340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396AEFE52C8F29D2002EA340 /* Assets.xcassets */; };
+		396AEFEA2C8F29D2002EA340 /* PrewarmingExtExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 396AEFD62C8F29D1002EA340 /* PrewarmingExtExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		396AEFF12C8F2B9C002EA340 /* PrewarmingExtAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */; };
+		396AEFF22C8F2BA9002EA340 /* PrewarmingExtAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		396AEFE82C8F29D2002EA340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 396AEFB92C8F298B002EA340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 396AEFD52C8F29D1002EA340;
+			remoteInfo = PrewarmingExtExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		396AEFEE2C8F29D2002EA340 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				396AEFEA2C8F29D2002EA340 /* PrewarmingExtExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		396AEFC12C8F298B002EA340 /* Prewarming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prewarming.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +53,17 @@
 		396AEFC62C8F298B002EA340 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		396AEFC82C8F298C002EA340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		396AEFCB2C8F298C002EA340 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		396AEFD62C8F29D1002EA340 /* PrewarmingExtExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrewarmingExtExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		396AEFD82C8F29D1002EA340 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		396AEFDA2C8F29D1002EA340 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		396AEFDD2C8F29D1002EA340 /* PrewarmingExtBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewarmingExtBundle.swift; sourceTree = "<group>"; };
+		396AEFDF2C8F29D1002EA340 /* PrewarmingExtLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewarmingExtLiveActivity.swift; sourceTree = "<group>"; };
+		396AEFE12C8F29D1002EA340 /* PrewarmingExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewarmingExt.swift; sourceTree = "<group>"; };
+		396AEFE32C8F29D1002EA340 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		396AEFE52C8F29D2002EA340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		396AEFE72C8F29D2002EA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewarmingExtAttributes.swift; sourceTree = "<group>"; };
+		396AEFF32C8F2D34002EA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,13 +74,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		396AEFD32C8F29D1002EA340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396AEFDB2C8F29D1002EA340 /* SwiftUI.framework in Frameworks */,
+				396AEFD92C8F29D1002EA340 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		396AEFB82C8F298B002EA340 = {
 			isa = PBXGroup;
 			children = (
+				396AEFEF2C8F2B72002EA340 /* Shared */,
 				396AEFC32C8F298B002EA340 /* Prewarming */,
+				396AEFDC2C8F29D1002EA340 /* PrewarmingExt */,
+				396AEFD72C8F29D1002EA340 /* Frameworks */,
 				396AEFC22C8F298B002EA340 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				396AEFC12C8F298B002EA340 /* Prewarming.app */,
+				396AEFD62C8F29D1002EA340 /* PrewarmingExtExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +109,7 @@
 		396AEFC32C8F298B002EA340 /* Prewarming */ = {
 			isa = PBXGroup;
 			children = (
+				396AEFF32C8F2D34002EA340 /* Info.plist */,
 				396AEFC42C8F298B002EA340 /* PrewarmingApp.swift */,
 				396AEFC62C8F298B002EA340 /* ContentView.swift */,
 				396AEFC82C8F298C002EA340 /* Assets.xcassets */,
@@ -67,6 +126,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		396AEFD72C8F29D1002EA340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396AEFD82C8F29D1002EA340 /* WidgetKit.framework */,
+				396AEFDA2C8F29D1002EA340 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		396AEFDC2C8F29D1002EA340 /* PrewarmingExt */ = {
+			isa = PBXGroup;
+			children = (
+				396AEFDD2C8F29D1002EA340 /* PrewarmingExtBundle.swift */,
+				396AEFDF2C8F29D1002EA340 /* PrewarmingExtLiveActivity.swift */,
+				396AEFE12C8F29D1002EA340 /* PrewarmingExt.swift */,
+				396AEFE32C8F29D1002EA340 /* AppIntent.swift */,
+				396AEFE52C8F29D2002EA340 /* Assets.xcassets */,
+				396AEFE72C8F29D2002EA340 /* Info.plist */,
+			);
+			path = PrewarmingExt;
+			sourceTree = "<group>";
+		};
+		396AEFEF2C8F2B72002EA340 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +166,34 @@
 				396AEFBD2C8F298B002EA340 /* Sources */,
 				396AEFBE2C8F298B002EA340 /* Frameworks */,
 				396AEFBF2C8F298B002EA340 /* Resources */,
+				396AEFEE2C8F29D2002EA340 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				396AEFE92C8F29D2002EA340 /* PBXTargetDependency */,
 			);
 			name = Prewarming;
 			productName = Prewarming;
 			productReference = 396AEFC12C8F298B002EA340 /* Prewarming.app */;
 			productType = "com.apple.product-type.application";
+		};
+		396AEFD52C8F29D1002EA340 /* PrewarmingExtExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 396AEFEB2C8F29D2002EA340 /* Build configuration list for PBXNativeTarget "PrewarmingExtExtension" */;
+			buildPhases = (
+				396AEFD22C8F29D1002EA340 /* Sources */,
+				396AEFD32C8F29D1002EA340 /* Frameworks */,
+				396AEFD42C8F29D1002EA340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrewarmingExtExtension;
+			productName = PrewarmingExtExtension;
+			productReference = 396AEFD62C8F29D1002EA340 /* PrewarmingExtExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +206,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					396AEFC02C8F298B002EA340 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					396AEFD52C8F29D1002EA340 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				396AEFC02C8F298B002EA340 /* Prewarming */,
+				396AEFD52C8F29D1002EA340 /* PrewarmingExtExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +242,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		396AEFD42C8F29D1002EA340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396AEFE62C8F29D2002EA340 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +259,31 @@
 			files = (
 				396AEFC72C8F298B002EA340 /* ContentView.swift in Sources */,
 				396AEFC52C8F298B002EA340 /* PrewarmingApp.swift in Sources */,
+				396AEFF12C8F2B9C002EA340 /* PrewarmingExtAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		396AEFD22C8F29D1002EA340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396AEFE22C8F29D1002EA340 /* PrewarmingExt.swift in Sources */,
+				396AEFF22C8F2BA9002EA340 /* PrewarmingExtAttributes.swift in Sources */,
+				396AEFE42C8F29D1002EA340 /* AppIntent.swift in Sources */,
+				396AEFE02C8F29D1002EA340 /* PrewarmingExtLiveActivity.swift in Sources */,
+				396AEFDE2C8F29D1002EA340 /* PrewarmingExtBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		396AEFE92C8F29D2002EA340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 396AEFD52C8F29D1002EA340 /* PrewarmingExtExtension */;
+			targetProxy = 396AEFE82C8F29D2002EA340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		396AEFCD2C8F298C002EA340 /* Debug */ = {
@@ -267,6 +408,7 @@
 		396AEFD02C8F298C002EA340 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +417,8 @@
 				DEVELOPMENT_TEAM = C5S966A49Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prewarming/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +431,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shape.jonatan.Prewarming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +444,7 @@
 		396AEFD12C8F298C002EA340 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +453,8 @@
 				DEVELOPMENT_TEAM = C5S966A49Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prewarming/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +467,72 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shape.jonatan.Prewarming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		396AEFEC2C8F29D2002EA340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5S966A49Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrewarmingExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrewarmingExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shape.jonatan.Prewarming.PrewarmingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		396AEFED2C8F29D2002EA340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5S966A49Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrewarmingExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrewarmingExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shape.jonatan.Prewarming.PrewarmingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +556,15 @@
 			buildConfigurations = (
 				396AEFD02C8F298C002EA340 /* Debug */,
 				396AEFD12C8F298C002EA340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		396AEFEB2C8F29D2002EA340 /* Build configuration list for PBXNativeTarget "PrewarmingExtExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396AEFEC2C8F29D2002EA340 /* Debug */,
+				396AEFED2C8F29D2002EA340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
