@@ -4,13 +4,13 @@ The demo app demonstrates an issue we’ve found where an app displaying a live 
 
 ## How to Reproduce
 
-	1.	Open the app.
-	2.	Complete the onboarding.
-	3.	Start the live activity.
-	4.	Turn the phone off.
-	5.	Turn the phone back on, but do not unlock it.
-	6.	Wait a few seconds, or up to a minute.
-	7.	Unlock and open the app.
+1. Open the app.
+2. Complete the onboarding.
+3. Start the live activity.
+4. Turn the phone off.
+5. Turn the phone back on, but do not unlock it.
+6. Wait a few seconds, or up to a minute.
+7. Unlock and open the app.
 
 If the bug occurs, you’ll notice that the onboarding is shown again. If you then quit and reopen the app, the onboarding will not appear.
 
