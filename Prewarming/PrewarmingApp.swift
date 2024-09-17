@@ -19,7 +19,9 @@ struct PrewarmingApp: App {
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    static var didFinishLaunchingWithOptionsCalledAt: String = ""
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Self.didFinishLaunchingWithOptionsCalledAt = Date.now.timestamp
         return true
     }
 }

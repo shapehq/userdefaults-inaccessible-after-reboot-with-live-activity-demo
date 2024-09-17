@@ -18,7 +18,7 @@ final class ActivityHelper: ObservableObject {
                 do {
                     let adventure = PrewarmingExtAttributes(name: "hero")
                     let initialState = PrewarmingExtAttributes.ContentState(
-                        emoji: "🫥"
+                        emoji: "🫥 \(Date.now.timestamp)"
                     )
                     
                     let activity = try Activity.request(
@@ -33,16 +33,42 @@ final class ActivityHelper: ObservableObject {
             }
         }
     }
+    
+    
+}
+
+final class DataAvailableHelper: ObservableObject {
+    
+    @Published private(set) var onDataAvailable: String = ""
+    
+    public init() {
+        NotificationCenter.default.addObserver(self, selector: #selector(dataDidBecomeAvailable), name: UIApplication.protectedDataDidBecomeAvailableNotification, object: nil)
+        if UIApplication.shared.isProtectedDataAvailable {
+            onDataAvailable = Date.now.timestamp
+        }
+    }
+    
+    @objc func dataDidBecomeAvailable(notification: Notification) {
+        onDataAvailable = Date.now.timestamp
+    }
 }
 
 struct ContentView: View {
     
     @StateObject private var activityHelper = ActivityHelper()
+    @StateObject private var dataAvailableHelper = DataAvailableHelper()
     
     @State var finishedOnboarding: Bool = UserDefaults.standard.bool(forKey: "onboarding") {
         didSet {
             UserDefaults.standard.set(finishedOnboarding, forKey: "onboarding")
         }
+    }
+    
+    @State var onAppearTimestamp: String = ""
+    
+    let initAt: String
+    init() {
+        initAt = Date.now.timestamp
     }
     
     var body: some View {
@@ -57,7 +83,19 @@ struct ContentView: View {
                 }
                 .padding()
             } else {
-                VStack {
+                VStack(spacing: 20) {
+                    VStack(spacing: 10) {
+                        Text("View init at \(initAt)")
+                            .monospaced()
+                        Text("App did finish launching at \(AppDelegate.didFinishLaunchingWithOptionsCalledAt)")
+                            .monospaced()
+                        Text("Data became available at \(dataAvailableHelper.onDataAvailable)")
+                            .monospaced()
+                        Text("View did appear \(onAppearTimestamp)")
+                            .monospaced()
+                    }
+                    .font(.system(size: 12, weight: .regular, design: .monospaced))
+                    
                     Text("Finish onboarding?")
                     Button {
                         finishedOnboarding = true
@@ -67,6 +105,8 @@ struct ContentView: View {
                     
                 }
             }
+        }.onAppear {
+            onAppearTimestamp = Date.now.timestamp
         }
     }
 }

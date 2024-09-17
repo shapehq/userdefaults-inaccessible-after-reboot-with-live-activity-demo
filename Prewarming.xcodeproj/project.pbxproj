@@ -21,6 +21,7 @@
 		396AEFEA2C8F29D2002EA340 /* PrewarmingExtExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 396AEFD62C8F29D1002EA340 /* PrewarmingExtExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		396AEFF12C8F2B9C002EA340 /* PrewarmingExtAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */; };
 		396AEFF22C8F2BA9002EA340 /* PrewarmingExtAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */; };
+		39EF0A802C99818400E01D22 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF0A7F2C99818400E01D22 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		396AEFE72C8F29D2002EA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewarmingExtAttributes.swift; sourceTree = "<group>"; };
 		396AEFF32C8F2D34002EA340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		39EF0A7F2C99818400E01D22 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				396AEFF02C8F2B9C002EA340 /* PrewarmingExtAttributes.swift */,
+				39EF0A7F2C99818400E01D22 /* Date+Extension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				396AEFC72C8F298B002EA340 /* ContentView.swift in Sources */,
+				39EF0A802C99818400E01D22 /* Date+Extension.swift in Sources */,
 				396AEFC52C8F298B002EA340 /* PrewarmingApp.swift in Sources */,
 				396AEFF12C8F2B9C002EA340 /* PrewarmingExtAttributes.swift in Sources */,
 			);
@@ -424,6 +428,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +495,7 @@
 				INFOPLIST_FILE = PrewarmingExt/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PrewarmingExt;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,6 +527,7 @@
 				INFOPLIST_FILE = PrewarmingExt/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PrewarmingExt;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
